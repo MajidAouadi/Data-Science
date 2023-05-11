@@ -1,0 +1,7 @@
+Link: 
+
+https://drivendata.github.io/cookiecutter-data-science/
+
+
+Terminal: 
+cookiecutter https://github.com/drivendata/cookiecutter-data-science
