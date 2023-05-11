@@ -10,3 +10,7 @@ import matplotlib.pyplot as plt
 data = pd.read_csv(
     r"C:\Users\Eigenaar\Desktop\Python projects\Data\Data-Science\3 - Twitch\data\raw\twitchdata-update.csv"
 )
+
+# Check the data on missing values, variable types and names
+data.info()  # Might have to change some variable types
+data.isnull().sum()  # 0 missing values
