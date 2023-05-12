@@ -1,8 +1,9 @@
 # Research question: What are the driver's of a streamers average viewership?
 # Description: This file contains the code to visualize the data in the Twitch dataset
 
-
 ## 0.1 - Load the data and libraries needed for this research
+import sys
+
 sys.path.append("\\data")
 from LibrariesAndData import *
 
@@ -15,6 +16,11 @@ from FeatureBuilding import *
 # Print summary of the variable names
 data.info()
 data.isnull().sum()
+
+# Histogram
+
+histogram = plt.hist(data["Followers gained"], bins=1000)
+
 
 # 2. Bivariate analysis
 
