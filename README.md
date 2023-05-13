@@ -1,4 +1,4 @@
-# Data-science projects in python (may 2023 and forward) - code + data
+# Data-science projects in python - may 2023 and forward - code + data
 ### The data science projects are set up as follows: 
 
 **1.   Bob constructions**
