@@ -18,10 +18,9 @@ data.info()
 data.isnull().sum()
 
 # Histogram
-
 histogram = plt.hist(data["Followers gained"], bins=1000)
 
-
 # 2. Bivariate analysis
+
 
 # 3. Multivariate analysis

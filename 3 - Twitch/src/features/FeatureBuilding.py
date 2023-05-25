@@ -35,4 +35,5 @@ data["AverageWatchTimePerViewer"] = (
 
 data["FollowerGainViewerGainRatio"] = data["Followers gained"] / data["Views gained"]
 
+
 # 1.3) Interaction variables
