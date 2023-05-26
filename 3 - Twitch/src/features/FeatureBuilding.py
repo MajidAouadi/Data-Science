@@ -5,6 +5,10 @@ import sys
 sys.path.append("\\data")
 from LibrariesAndData import *
 
+# Rewrite variables without spaces
+data.columns = data.columns.str.replace(" ", "_")
+
+
 # 1.0) Rewrite the variables types
 # Channel variable is a category variable
 data["Channel"] = data["Channel"].astype("category")
@@ -32,8 +36,6 @@ data["AverageWatchTimePerViewer"] = (
 )
 # 1.2.3) Follower gain/viewer gain ratio
 # Divide the column followers gained with the column viewers gained
-
 data["FollowerGainViewerGainRatio"] = data["Followers gained"] / data["Views gained"]
-
 
 # 1.3) Interaction variables
