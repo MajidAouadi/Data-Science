@@ -7,7 +7,6 @@ from LibrariesAndData import *
 
 # Rewrite variables without spaces
 data.columns = data.columns.str.replace(" ", "_")
-
 data.info()
 
 # 1.0) Rewrite the variables types
@@ -40,3 +39,15 @@ data["AverageWatchTimePerViewer"] = (
 data["FollowerGainViewerGainRatio"] = data["Followers_gained"] / data["Views_gained"]
 
 # 1.3) Interaction variables
+
+
+################################## EXTRA FOR THE FUTURE #################################
+
+
+######### FOR EXAMPLE #########
+
+# 1) Changing the variables from categorical to numerical values.
+## le = LabelEncoder()
+## df["sex_idx"] = le.fit_transform(df["sex"])
+## df["smoker_idx"] = le.fit_transform(df["smoker"])
+## df["region_idx"] = le.fit_transform(df["region"])
